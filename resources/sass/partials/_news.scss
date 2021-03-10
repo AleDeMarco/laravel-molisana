@@ -1,0 +1,24 @@
+main{
+  .container{
+    background-image: url('../../../public/img/news.jpg');
+    padding: 50px 0;
+    margin: 20px 0;
+    img{
+      width: 100%;
+      margin: 20px 0;
+    }
+    .news-box{
+      background-color: white;
+      padding: 30px 15px;
+      width: 60%;
+      margin: 40px auto;
+      .title{
+        font-size: 30px;
+        color: #B2282F;
+      }
+      .description{
+        font-size: 20px;
+      }
+    }
+  }
+}

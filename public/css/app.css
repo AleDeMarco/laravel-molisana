@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Teko", sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+header #logo {
+  margin-top: 30px;
+}
+
+header .main-menu nav ul {
+  list-style: none;
+}
+
+header .main-menu nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+  border-bottom: 3px solid transparent;
+}
+
+header .main-menu nav ul li:hover {
+  border-bottom-color: #B2282F;
+}
+
+header .main-menu nav ul li a {
+  text-decoration: none;
+  color: #012D75;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+header .main-menu nav ul li a:hover {
+  color: #B2282F;
+}
+
+footer {
+  width: 100%;
+}
+
+footer img {
+  width: 100%;
+}
+
+main img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+main .card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .card-container .card {
+  width: calc(100% / 3);
+}
+
+main .card-container .card img {
+  width: 100%;
+}
+
+main .container {
+  background-image: url(/images/news.jpg?06a79f19fbb4489a17e2dff67ce37137);
+  padding: 50px 0;
+  margin: 20px 0;
+}
+
+main .container img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+main .container .news-box {
+  background-color: white;
+  padding: 30px 15px;
+  width: 60%;
+  margin: 40px auto;
+}
+
+main .container .news-box .title {
+  font-size: 30px;
+  color: #B2282F;
+}
+
+main .container .news-box .description {
+  font-size: 20px;
+}
+
