@@ -6,13 +6,13 @@
     <nav>
       <ul>
         <li>
-          <a href="{{ route('pagina-home') }}">Home</a>
+          <a href="{{ route('pagina-home') }}" class="{{ (Request::route()->getName() == 'pagina-home') ? 'active' : '' }}">Home</a>
         </li>
         <li>
-          <a href="{{ route('pagina-prodotti') }}">Products</a>
+          <a href="{{ route('pagina-prodotti') }}" class="{{ (Request::route()->getName() == 'pagina-prodotti') ? 'active' : '' }}">Products</a>
         </li>
         <li>
-          <a href="{{ route('pagina-notizie') }}">News</a>
+          <a href="{{ route('pagina-notizie') }}" class="{{ (Request::route()->getName() == 'pagina-notizie') ? 'active' : '' }}">News</a>
         </li>
       </ul>
     </nav>

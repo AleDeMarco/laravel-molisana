@@ -1,12 +1,48 @@
 main{
+  h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 30px;
+    color: #012D75;
+    margin: 40px 0 20px;
+  }
   .card-container{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     .card{
       width: calc(100% / 3);
-      img{
+      position: relative;
+      cursor: pointer;
+      &>img{
         width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+      .overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#012D75, .5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        &>a{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        &>i{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 100px;
+          color: #B2282F;
+        }
+      }
+      &:hover .overlay{
+        display: block;
       }
     }
   }
